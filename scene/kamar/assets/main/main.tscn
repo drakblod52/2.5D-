@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://bijjtvncyv8k7"]
+
+[ext_resource type="PackedScene" uid="uid://dhfqxy63v3al" path="res://scene/kamar/assets/prefab/kamar.tscn" id="1_lb8cd"]
+[ext_resource type="PackedScene" uid="uid://cv3dm1iulbv08" path="res://scene/kamar/assets/prefab/kasur.tscn" id="2_fqasd"]
+[ext_resource type="PackedScene" uid="uid://gyst4ek58yf4" path="res://scene/kamar/assets/prefab/cermin.tscn" id="3_cm655"]
+[ext_resource type="Script" path="res://assets/script/Gerak.gd" id="4_kqxrt"]
+[ext_resource type="SpriteFrames" uid="uid://dma71xjhrtrjl" path="res://scene/kamar/assets/Player/tree/idle.tres" id="5_3vsf6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vtgqa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_602p0"]
+
+[node name="main" type="Node3D"]
+
+[node name="kamar" parent="." instance=ExtResource("1_lb8cd")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="kamar"]
+shape = SubResource("BoxShape3D_vtgqa")
+
+[node name="Kasur" parent="." instance=ExtResource("2_fqasd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.217094, 0.0605184, 0.0341178)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Kasur"]
+
+[node name="cermin" parent="." instance=ExtResource("3_cm655")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.220526, 1.19209e-07, 2.81588)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+script = ExtResource("4_kqxrt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(0.621064, 0, 0, 0, 1.07636, 0, 0, 0, 0.621064, -1.38197, 0.641069, 1.30151)
+shape = SubResource("BoxShape3D_602p0")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CharacterBody3D"]
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/SpringArm3D"]
+transform = Transform3D(0.0126707, 0, -0.99992, 0, 1, 0, 0.99992, 0, 0.0126707, -2.70284, 0.523789, 1.1743)
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="CharacterBody3D"]
+transform = Transform3D(-0.0163355, 0, -0.999867, 0, 1, 0, 0.999867, 0, -0.0163355, -1.41464, 0.532024, 1.28466)
+sprite_frames = ExtResource("5_3vsf6")
+animation = &"idle"
+frame = 2
+frame_progress = 0.1055

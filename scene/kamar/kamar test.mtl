@@ -1,0 +1,12 @@
+# Blender 3.6.9 MTL File: 'kamar test.blend'
+# www.blender.org
+
+newmtl bedroom
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd texture/bedroom 128.png
+map_d texture/bedroom 128.png

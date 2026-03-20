@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dwis5tfxndtgu"
+path="res://.godot/imported/Kasur Kayu.obj-866f4bf73211447220f79360d9e775fa.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Kasur Kayu.obj-866f4bf73211447220f79360d9e775fa.mesh"]
+
+source_file="res://scene/kamar/assets/texture mesh/Kasur Kayu.obj"
+dest_files=["res://.godot/imported/Kasur Kayu.obj-866f4bf73211447220f79360d9e775fa.mesh", "res://.godot/imported/Kasur Kayu.obj-866f4bf73211447220f79360d9e775fa.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

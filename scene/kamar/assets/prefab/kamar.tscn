@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://dhfqxy63v3al"]
+
+[ext_resource type="Material" uid="uid://b0gg2hj8a0iqg" path="res://assets/Pritilan/Material/kamar.tres" id="1_lp08m"]
+[ext_resource type="ArrayMesh" uid="uid://doifovqhan08y" path="res://scene/kamar/assets/texture mesh/kamar test.obj" id="2_gcier"]
+[ext_resource type="Material" uid="uid://b68q23bst47rp" path="res://assets/Pritilan/Material/Lemari.tres" id="3_328rm"]
+[ext_resource type="Material" uid="uid://8tnfkw7hp3t7" path="res://assets/Pritilan/Material/Gorden.tres" id="5_65pa4"]
+[ext_resource type="ArrayMesh" uid="uid://nd2nrgluocdl" path="res://scene/kamar/assets/texture mesh/Lemari.obj" id="5_dvsm7"]
+[ext_resource type="ArrayMesh" uid="uid://b82vqayok021s" path="res://scene/kamar/assets/texture mesh/Gorden.obj" id="6_2nwpl"]
+
+[node name="kamar" type="Node3D"]
+
+[node name="Kamar" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_lp08m")
+mesh = ExtResource("2_gcier")
+
+[node name="innterior" type="Node3D" parent="Kamar"]
+
+[node name="Lemari" type="MeshInstance3D" parent="Kamar/innterior"]
+transform = Transform3D(-0.999769, 0, -0.0214834, 0, 1, 0, 0.0214834, 0, -0.999769, -0.293619, 0, 3.55659)
+material_override = ExtResource("3_328rm")
+mesh = ExtResource("5_dvsm7")
+
+[node name="gorden" type="MeshInstance3D" parent="Kamar/innterior"]
+transform = Transform3D(1, 0, 0, 0, 2.04424, 0, 0, 0, 1.27391, -0.030778, 0.228151, 0.62471)
+material_override = ExtResource("5_65pa4")
+mesh = ExtResource("6_2nwpl")

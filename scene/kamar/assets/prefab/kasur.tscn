@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://cv3dm1iulbv08"]
+
+[ext_resource type="Material" uid="uid://5vxg4q5qwpt" path="res://assets/Pritilan/Material/Kasur kayu.tres" id="1_cdi6q"]
+[ext_resource type="ArrayMesh" uid="uid://dwis5tfxndtgu" path="res://scene/kamar/assets/texture mesh/Kasur Kayu.obj" id="2_li5un"]
+[ext_resource type="Material" uid="uid://djungaylgk4n2" path="res://assets/Pritilan/Material/Busa.tres" id="3_nfqto"]
+[ext_resource type="ArrayMesh" uid="uid://d04psaoewim4e" path="res://scene/kamar/assets/texture mesh/Busa.obj" id="4_adkrq"]
+
+[node name="Kasur" type="Node3D"]
+
+[node name="Kasur kayu" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_cdi6q")
+mesh = ExtResource("2_li5un")
+
+[node name="Busa" type="MeshInstance3D" parent="Kasur kayu"]
+material_override = ExtResource("3_nfqto")
+mesh = ExtResource("4_adkrq")

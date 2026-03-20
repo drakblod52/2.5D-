@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://nd2nrgluocdl"
+path="res://.godot/imported/Lemari.obj-ff56ea8409e12732ea57691122fe6a04.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Lemari.obj-ff56ea8409e12732ea57691122fe6a04.mesh"]
+
+source_file="res://scene/kamar/assets/texture mesh/Lemari.obj"
+dest_files=["res://.godot/imported/Lemari.obj-ff56ea8409e12732ea57691122fe6a04.mesh", "res://.godot/imported/Lemari.obj-ff56ea8409e12732ea57691122fe6a04.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
